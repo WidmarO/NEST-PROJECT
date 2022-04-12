@@ -1,4 +1,6 @@
+
 import { IsEmail, IsNotEmpty, IsString, MinLength } from "class-validator";
+import { OneToMany } from "typeorm";
 
 export class CreateUserDto {
     @IsString() @IsNotEmpty()
@@ -15,4 +17,5 @@ export class CreateUserDto {
 
     @IsString()
     address: string;
+
 }
